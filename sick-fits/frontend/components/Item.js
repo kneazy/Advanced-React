@@ -27,14 +27,13 @@ class Item extends Component {
         </Title>
         <PriceTag>{formatMoney(item.price)}</PriceTag>
         <p>{item.description}</p>
-
         <div className='buttonList'>
           <Link
             href={{
               pathname: 'update',
               query: { id: item.id },
           }}>
-          <a>Edit ✏️</a>
+          <a>Edit 🍌</a>
           </Link>
           <button>Add to Cart</button>
           <DeleteItem id={item.id}>Delete this item</DeleteItem>
